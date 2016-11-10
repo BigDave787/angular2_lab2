@@ -8,12 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class MilesToKiloComponent implements OnInit {
 
   conversion: string = "";
+  sum: number;
+
 
   constructor() { }
 
   onClickMe(myMessage: string){
     this.conversion = myMessage;
   }
+
+  calculate(num: number){
+    this.sum = (num*1.609344);
+  }
+
 
   ngOnInit() {
   }

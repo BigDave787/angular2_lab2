@@ -1,6 +1,7 @@
 <p>
-   <input #myConversion myConversion.value='' />
-   <button (click)="onClickMe(myConversion.value)">Click Me!</button>
+   <input #myConversion (keyup)="0"/>
+  
+   <!--<button (click)="calculate(myConversion.value)">Click Me!</button> -->
 </p>
 
-{{conversion}}
+{{myConversion.value}}
